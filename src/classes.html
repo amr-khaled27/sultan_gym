@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./all.min.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="./input.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="bg-bgc1 drop-shadow-md">
+      <div class="container mx-auto px-4 py-4 2xl:py-0 flex justify-between">
+        <div class="logo text-primary flex items-center gap-2">
+          <i class="fa-solid fa-dumbbell -rotate-45 text-lg sm:text-2xl"></i>
+          <h1 class="uppercase text-xl sm:text-2xl font-extrabold">
+            sultan gym
+          </h1>
+        </div>
+
+        <div
+          class="header-links hidden items-center gap-2 text-textclr1 2xl:flex"
+        >
+          <a href="index.html" effect="ripple" class="font-medium py-4 px-2"
+            >Home</a
+          >
+          <a href="#why-choose-us" effect="ripple" class="font-medium py-4 px-2"
+            >About</a
+          >
+          <a effect="ripple" class="font-medium py-4 px-2">Gallery</a>
+          <a effect="ripple" class="font-medium py-4 px-2">Schedule</a>
+          <a effect="ripple" class="font-medium py-4 px-2">Blog</a>
+          <a effect="ripple" class="font-medium py-4 px-2">Pricing</a>
+          <a effect="ripple" class="font-medium py-4 px-2">Classes</a>
+          <a effect="ripple" class="font-medium py-4 px-2">Contact</a>
+        </div>
+
+        <div class="flex justify-between items-center gap-1 sm:gap-2">
+          <button
+            effect="ripple"
+            class="w-10 h-10 text-xl text-textclr1 rounded-full capitalize border-none bg-bgc1 outline-none darkmode-btn"
+          >
+            <i class="fa-solid fa-moon text-textclr1"></i>
+          </button>
+
+          <button
+            effect="ripple"
+            class="menu-btn mr-2.5 w-10 h-10 text-xl text-textclr1 rounded-full capitalize border-none bg-bgc1 outline-none"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <a
+            effect="ripple"
+            class="p-2 border-[2px] border-textclr2 text-textclr1 border-solid rounded-md flex items-center gap-2"
+            ><i
+              class="fa-solid fa-plus w-5 h-5 rounded-md bg-textclr2 text-textclr3 flex justify-center items-center"
+            ></i>
+            <span class="hidden sm:inline">Join Class Now</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <span
+      class="dark-bg is-off fixed w-full h-full bg-[#00000098] top-0 left-0 transition-opacity duration-300 z-[100]"
+    ></span>
+
+    <aside
+      class="menu fixed -right-full sm:-right-[300px] top-0 w-full sm:w-[300px] z-[999] h-full bg-bgc1 overflow-auto transition-all duration-300 ease-in-out"
+    >
+      <div class="p-4">
+        <div
+          class="logo text-primary flex items-center justify-center h-24 gap-2 relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+        >
+          <i class="fa-solid fa-dumbbell -rotate-45 text-lg sm:text-2xl"></i>
+          <p class="uppercase text-xl sm:text-2xl font-extrabold">sultan gym</p>
+        </div>
+
+        <div class="absolute top-2.5 left-2.5">
+          <button
+            effect="ripple"
+            class="w-10 h-10 close-menu bg-primary rounded-full text-white flex justify-center items-center cursor-pointer"
+          >
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="menu-links flex flex-col text-textclr1">
+        <a href="index.html" effect="ripple" class="font-medium p-4">Home</a>
+        <a href="#why-choose-us" effect="ripple" class="font-medium p-4"
+          >About</a
+        >
+        <a effect="ripple" class="font-medium p-4">Gallery</a>
+        <a effect="ripple" class="font-medium p-4">Schedule</a>
+        <a effect="ripple" class="font-medium p-4">Blog</a>
+        <a effect="ripple" class="font-medium p-4">Pricing</a>
+        <a effect="ripple" class="font-medium p-4">Classes</a>
+        <a effect="ripple" class="font-medium p-4">Contact</a>
+      </div>
+    </aside>
+
+    <section class="bg-bgc1 section-padding">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      >
+        <div
+          class="class-card bg-[url('../content/classes1.jpg')] bg-cover bg-center relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">
+            Body Building
+          </h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> Dorian Yate</p>
+            <p><i class="fa-regular fa-clock"></i> Wed: 9:00 AM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes2.jpg')] bg-cover bg-center relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">
+            Power Lifting
+          </h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> Andrew Iman</p>
+            <p><i class="fa-regular fa-clock"></i> Sun: 5:00 PM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes3.jpg')] bg-cover bg-[center_right] relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">Cycling</h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> James Alex</p>
+            <p><i class="fa-regular fa-clock"></i> Sat: 9:00 AM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes4.jpg')] bg-cover bg-[center_right] relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">Karate</h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> Samuel Josh</p>
+            <p><i class="fa-regular fa-clock"></i> Fri: 9:00 AM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes5.jpg')] bg-cover bg-center relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">Boxing</h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> Thomas Daniel</p>
+            <p><i class="fa-regular fa-clock"></i> Sat: 7:00 PM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes6.jpg')] bg-cover bg-center relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">Workout</h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> Matthew Josh</p>
+            <p><i class="fa-regular fa-clock"></i> Sun: 8:00 PM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes7.jpg')] bg-cover bg-center relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">Cardio</h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> Paul John</p>
+            <p><i class="fa-regular fa-clock"></i> Sun: 8:00 PM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+        <div
+          class="class-card bg-[url('../content/classes8.jpg')] bg-cover bg-center relative flex flex-col gap-2 px-4 pt-36 pb-4 rounded-lg"
+        >
+          <span
+            class="absolute left-0 top-0 w-full h-full rounded-lg bg-black opacity-60"
+          ></span>
+
+          <h5 class="text-white font-semibold text-2xl relative">
+            Mixed Martial Arts
+          </h5>
+          <div class="relative text-white flex gap-4">
+            <p><i class="fa-regular fa-user"></i> John Matthew</p>
+            <p><i class="fa-regular fa-clock"></i> Sun: 8:00 PM</p>
+          </div>
+
+          <div class="relative w-fit mt-4">
+            <a
+              effect="ripple"
+              class="bg-white text-black uppercase w-fit px-6 py-3 text-sm font-medium flex items-center gap-2 z-10"
+              >join now
+              <i class="fa-solid fa-arrow-right text-black text-sm"></i
+            ></a>
+
+            <span
+              class="absolute w-full h-full border border-solid border-white -top-2 -right-2 border-opacity-25"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section-padding bg-bgc2">
+      <div
+        class="container mx-auto px-4 flex justify-center sm:justify-between flex-wrap gap-4"
+      >
+        <div class="logo text-primary flex items-center gap-2">
+          <i class="fa-solid fa-dumbbell -rotate-45 text-lg sm:text-2xl"></i>
+          <p class="uppercase text-4xl font-extrabold">sultan gym</p>
+        </div>
+
+        <div class="opening-hours text-textclr1 flex gap-4 flex-col">
+          <p class="font-bold bg-primary py-2 text-center text-xl text-white">
+            Opening Hours
+          </p>
+          <div class="flex flex-col gap-2 uppercase text-xs">
+            <div
+              class="flex text-sm justify-between py-4 w-[200px] relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+            >
+              <p>monday</p>
+              <p>9:00am - 8pm</p>
+            </div>
+            <div
+              class="flex text-sm justify-between py-4 w-[200px] relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+            >
+              <p>tuesday</p>
+              <p>9:00am - 8pm</p>
+            </div>
+            <div
+              class="flex text-sm justify-between py-4 w-[200px] relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+            >
+              <p>wednesday</p>
+              <p>9:00am - 8pm</p>
+            </div>
+            <div
+              class="flex text-sm justify-between py-4 w-[200px] relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+            >
+              <p>thursday</p>
+              <p>9:00am - 8pm</p>
+            </div>
+            <div
+              class="flex text-sm justify-between py-4 w-[200px] relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+            >
+              <p>friday</p>
+              <p>9:00am - 12am</p>
+            </div>
+            <div
+              class="flex text-sm justify-between py-4 w-[200px] relative after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+            >
+              <p>saturday</p>
+              <p>9:00am - 12am</p>
+            </div>
+            <div class="flex text-sm justify-between py-4 w-[200px]">
+              <p>sunday</p>
+              <p>9:00am - 12am</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="locations flex flex-col gap-4 text-textclr1">
+          <p class="font-bold text-xl text-white bg-primary py-2 text-center">
+            Locations
+          </p>
+
+          <div
+            class="location1 flex flex-col gap-2 relative pb-2 after:absolute after:w-full after:h-[1px] after:bottom-0 after:left-0 after:bg-textclr1"
+          >
+            <p class="font-medium text-lg">Location 1</p>
+            <p class="text-xs max-w-[200px]">
+              Fictional Country - Fictional City - Fictional Street 18 -
+              Fictional building 21
+            </p>
+          </div>
+          <div class="location2">
+            <p class="font-medium text-lg">Location 2</p>
+            <p class="text-xs max-w-[200px]">
+              Fictional Country - Fictional City - Fictional Street 12 -
+              Fictional building 34
+            </p>
+          </div>
+        </div>
+
+        <div class="contact flex flex-col gap-4 text-textclr1">
+          <p class="font-bold text-xl text-white bg-primary py-2 text-center">
+            Contact
+          </p>
+          <div class="contact1">
+            <p class="font-medium text-lg">Phone Numbers</p>
+            <p class="text-xs">01012345678</p>
+            <p class="text-xs">01087654321</p>
+          </div>
+          <div class="contact2">
+            <p class="font-medium text-lg">Email</p>
+            <p class="text-xs">SultanGym123@email.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./classes.js"></script>
+  </body>
+</html>
