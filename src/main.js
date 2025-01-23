@@ -113,29 +113,45 @@ let testmonialButtons = document.querySelectorAll(".testmonial-buttons button");
 let texts = document.querySelectorAll(".ttext");
 let images = document.querySelectorAll(".person-testmonial img");
 
-testmonialButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    testmonialButtons.forEach((button) => {
-      button.classList.remove("selected");
-    });
-    button.classList.add("selected");
+let currentIndex = 0;
 
-    images.forEach((image) => {
-      if (button.getAttribute("data-btn") === image.getAttribute("data-img")) {
-        image.classList.remove("hide");
-      } else {
-        image.classList.add("hide");
-      }
-    });
-    texts.forEach((text) => {
-      if (button.getAttribute("data-btn") === text.getAttribute("data-text")) {
-        text.classList.remove("hide");
-      } else {
-        text.classList.add("hide");
-      }
-    });
+function showTestimonial(index) {
+  testmonialButtons.forEach((button, i) => {
+    if (i === index) {
+      button.classList.add("selected");
+    } else {
+      button.classList.remove("selected");
+    }
+  });
+
+  images.forEach((image, i) => {
+    if (i === index) {
+      image.classList.remove("hide");
+    } else {
+      image.classList.add("hide");
+    }
+  });
+
+  texts.forEach((text, i) => {
+    if (i === index) {
+      text.classList.remove("hide");
+    } else {
+      text.classList.add("hide");
+    }
+  });
+}
+
+testmonialButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    currentIndex = index;
+    showTestimonial(index);
   });
 });
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % testmonialButtons.length;
+  showTestimonial(currentIndex);
+}, 5000);
 
 let height = document.querySelector("[placeholder='Height in cm']");
 let weight = document.querySelector("[placeholder='Weight in kg']");
