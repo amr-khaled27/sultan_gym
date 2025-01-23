@@ -965,6 +965,10 @@ video {
   gap: 1rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .justify-self-start {
   justify-self: start;
 }
@@ -1065,6 +1069,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#121212\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 18 18 / var(--tw-border-opacity));
+}
+
 .border-opacity-25 {
   --tw-border-opacity: 0.25;
 }
@@ -1103,38 +1112,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/content\/bg2\.jpg\'\)\] {
-  background-image: url('../content/bg2.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/classes1\.jpg\'\)\] {
-  background-image: url('../content/classes1.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/classes2\.jpg\'\)\] {
-  background-image: url('../content/classes2.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/classes3\.jpg\'\)\] {
-  background-image: url('../content/classes3.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/classes4\.jpg\'\)\] {
-  background-image: url('../content/classes4.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/classes5\.jpg\'\)\] {
-  background-image: url('../content/classes5.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/classes6\.jpg\'\)\] {
-  background-image: url('../content/classes6.jpg');
-}
-
-.bg-\[url\(\'\.\.\/content\/landing\.jpg\'\)\] {
-  background-image: url('../content/landing.jpg');
-}
-
 .bg-\[url\(\'\.\.\/content\/bg2\.webp\'\)\] {
   background-image: url('../content/bg2.webp');
 }
@@ -1165,14 +1142,6 @@ video {
 
 .bg-\[url\(\'\.\.\/content\/landing\.webp\'\)\] {
   background-image: url('../content/landing.webp');
-}
-
-.bg-\[url\(\'\.\.\/content\/bg2\.web\'\)\] {
-  background-image: url('../content/bg2.web');
-}
-
-.bg-\[url\(\'\.\.\/content\/landing\.wp\'\)\] {
-  background-image: url('../content/landing.wp');
 }
 
 .bg-cover {
@@ -1437,6 +1406,18 @@ video {
   outline-offset: 2px;
 }
 
+.outline {
+  outline-style: solid;
+}
+
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-transparent {
+  outline-color: transparent;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1598,33 +1579,19 @@ input[type="number"] {
   background-color: rgb(var(--text1) / var(--tw-bg-opacity));
 }
 
+.hover\:translate-y-2:hover {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-y-2:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic1\.jpg\'\)\]:hover {
-  background-image: url('../content/pic1.jpg');
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic2\.jpg\'\)\]:hover {
-  background-image: url('../content/pic2.jpg');
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic3\.jpg\'\)\]:hover {
-  background-image: url('../content/pic3.jpg');
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic4\.jpg\'\)\]:hover {
-  background-image: url('../content/pic4.jpg');
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic5\.jpg\'\)\]:hover {
-  background-image: url('../content/pic5.jpg');
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic6\.jpg\'\)\]:hover {
-  background-image: url('../content/pic6.jpg');
 }
 
 .hover\:bg-\[url\(\'\.\.\/content\/pic1\.webp\'\)\]:hover {
@@ -1643,12 +1610,8 @@ input[type="number"] {
   background-image: url('../content/pic4.webp');
 }
 
-.hover\:bg-\[url\(\'\.\.\/content\/pic5\.webp\'\)\]:hover {
-  background-image: url('../content/pic5.webp');
-}
-
-.hover\:bg-\[url\(\'\.\.\/content\/pic6\.webp\'\)\]:hover {
-  background-image: url('../content/pic6.webp');
+.hover\:bg-\[url\(\'\.\.\/content\/pic5\.jpg\'\)\]:hover {
+  background-image: url('../content/pic5.jpg');
 }
 
 .hover\:bg-\[url\(\'\.\.\/content\/pic6\.jpeg\'\)\]:hover {
@@ -1671,8 +1634,20 @@ input[type="number"] {
   outline-width: 1px;
 }
 
+.hover\:outline-2:hover {
+  outline-width: 2px;
+}
+
+.hover\:outline-4:hover {
+  outline-width: 4px;
+}
+
 .hover\:outline-textclr1:hover {
   outline-color: rgb(var(--text1) / 1);
+}
+
+.hover\:outline-white:hover {
+  outline-color: #fff;
 }
 
 .group:hover .group-hover\:inline {
